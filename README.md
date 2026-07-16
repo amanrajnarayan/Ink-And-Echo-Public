@@ -56,7 +56,7 @@ To handle modern "Scoped Storage" boundaries, the **Time Machine** architecture 
 
 1.  **Clone the repo:**
     ```bash
-    git clone [https://github.com/amanrajnarayan/Ink-Echo.git](https://github.com/amanrajnarayan/Ink-Echo.git)
+    git clone [https://github.com/amanrajnarayan/Ink-Echo.git](https://github.com/amanrajnarayan/Ink-Echo-Public.git)
     ```
 
 2.  **Install dependencies:**
