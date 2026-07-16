@@ -1,0 +1,51 @@
+name: ink_and_echo
+description: "A simple note-taking app built with Flutter, designed to help you capture your thoughts and ideas effortlessly. With a clean and intuitive interface, Ink & Echo allows you to create, organize, and manage your notes with ease. Whether you're jotting down quick reminders or writing detailed notes, Ink & Echo provides a seamless experience to keep your thoughts organized and accessible across all your devices."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.11.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_fonts: ^8.0.2
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  intl: ^0.20.2
+  gal: ^1.1.0
+  share_plus: ^10.1.0
+  path_provider: ^2.1.2
+  file_picker: ^8.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.13
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - google_fonts/
+  fonts:
+    - family: Merriweather
+      fonts:
+        - asset: google_fonts/Merriweather-Regular.ttf
+    - family: Oswald
+      fonts:
+        - asset: google_fonts/Oswald-Regular.ttf
+    - family: LaBelleAurore
+      fonts:
+        - asset: google_fonts/LaBelleAurore-Regular.ttf
+    - family: CedarvilleCursive
+      fonts:
+        - asset: google_fonts/CedarvilleCursive-Regular.ttf
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon.png"
+  min_sdk_android: 21
