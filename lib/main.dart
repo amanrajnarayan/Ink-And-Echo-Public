@@ -220,7 +220,7 @@ class _JournalHomeState extends State<JournalHome> {
       final tempDir = await getTemporaryDirectory();
       final file = await File('${tempDir.path}/echo_share.png').create();
       await file.writeAsBytes(bytes);
-      await Share.shareXFiles([XFile(file.path)], text: 'My Echo ✦ #InkAndEcho');
+      await Share.shareXFiles([XFile(file.path)], text: 'My Echo #InkAndEcho');
     }
   }
 
@@ -336,7 +336,7 @@ class _JournalHomeState extends State<JournalHome> {
                             const SizedBox(height: 60),
                             Align(
                               alignment: Alignment.bottomRight,
-                              child: Text("✦ Ink & Echo", style: GoogleFonts.merriweather(fontSize: 14, color: _inkColor.withOpacity(0.4))),
+                              child: Text("Ink & Echo", style: GoogleFonts.merriweather(fontSize: 14, color: _inkColor.withOpacity(0.4))),
                             )
                           ],
                         ),
@@ -684,11 +684,7 @@ class _JournalHomeState extends State<JournalHome> {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Text(
-                    "✦",
-                    style: TextStyle(color: _inkColor.withOpacity(0.25), fontSize: 16),
-                  ),
-                  const SizedBox(height: 10),
+                  // const SizedBox(height: 10),
                   Text(
                     "© 2026 AMAN RAJ. ALL RIGHTS RESERVED.",
                     style: GoogleFonts.oswald(
